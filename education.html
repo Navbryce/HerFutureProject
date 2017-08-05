@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Website for Julie">
+    <meta name="author" content="Bryce P.">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>her future project</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- CSS --->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/standardpage-style.css">
+    <link rel="stylesheet" href="./css/NavProductGallery.css">
+
+    <!--Pop-up gallery (plugin) -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+
+  </head>
+  <script>
+
+    $(window).on('load', function() {
+        $("body").fadeIn(1500);
+    });
+    $(document).ready(function(){
+        //Initialize nav product gallery by Bryce P.
+        $(".nav-product-gallery").navProductGallery();
+
+
+        //Initialize other gallery plugin
+        $('#bottom-gallery').magnificPopup({
+            delegate: 'tr>td>a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: 'The image could not load',
+                titleSrc: function(item) {
+                    return item.el.attr('caption');
+                }
+            },
+            zoom: {
+                enabled: true,
+                duration: 300,
+                opener: function(element) {
+                    return element.find('img');
+			               }
+	          }
+        });
+
+
+    });
+
+
+  </script>
+
+  <body>
+
+      <nav class="navbar navbar-static-top navbar-default">
+        <div style="padding-left: 5%; padding-right: 5%; padding-top: 30px; padding-bottom: 30px;" class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="pink no-hover" class="pink">Her</span> future</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul id="navLinks" class="nav navbar-nav">
+              <li><a class="navLink" href="index.html">home</a></li>
+              <li><a class="navLink" href="thestory.html">the story</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle navLink disabled" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">the issues <span class="fa fa-angle-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="bottom-border"><a href="representation.html">representation</a></li>
+                  <li><a href="education.html">education</a></li>
+                </ul>
+              </li>
+              <li><a class="navLink" href="thework.html">artwork</a></li>
+              <li><a class="navLink pink-link" href="supporther.html">support her future</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid title">
+        <div class="row-fluid">
+            <div class="col-sm-12 center-block">
+                <img src="./Pictures/swirl.svg">
+                <h1>education</h1>
+                <img src="./Pictures/swirl.svg">
+            </div>
+        </div>
+    </div>
+    <div id="content" class="container-fluid">
+        <div class="row equal-height">
+            <div class="col-md-4">
+                <div class="nav-product-gallery">
+                    <div class="nav-gallery-nav">
+                        <img src="./Pictures/slider1.jpg">
+                        <img src="./Pictures/slider2.jpg">
+                        <img src="./Pictures/slider3.jpg">
+                    </div>
+                    <div class="nav-gallery-image-display">
+                        <img src="./Pictures/slider1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-offset-0 col-md-8 text-section">
+                <h2 class="nunito">POWER TO HER</h2>
+                <h4 style="font-size: 22px;" class="nunito">Advocating for global girl's education</h4>
+                <div class="text">
+                    <p>
+                        The Power to Her series raises awareness for the girls in developing countries who face numerous obstacles in the struggle for a quality education every day.
+                        In Malawi, only 9% of girls graduate from secondary school. But with an education, girls are empowered and
+                        equipped with the resources for an future of economic success and independence.
+                    </p>
+					<p>
+                        Currently, I am selling stickers of the Power to Her design to benefit Girl Up’s School Cycle campaign,
+                        which aims to eliminate one of the main factors keeping girls out of school: distance.
+                        For every $125 raised, Girl Up will buy a bike for a girl in Malawi so she can drastically
+                        reduce the time spent on a journey that can sometimes be up to 10 miles long both ways. With a bike,
+                        she can go further- empowering herself, her family, and her community.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+            <div class="col-sm-12 align-paragraphs-center text">
+                <h2 class="nunito">MY GOAL: RAISE <span class="pink">$1,250</span> FOR SCHOOL CYCLE</h2>
+                <p>Since my sophomore year, I have advocated for Girl Up including starting Howard County’s first Girl Up club at my school. Since then, Girl Up has changed my
+                life and provided me with opportunities I never dreamed of happening (such as meeting the first female Secretary of State)!</p>
+                <p>However, Girl Up does even more to impact girls in developing countries, where most are not as fortunate as I. As of 2017, Girl Up has donated 800 bicycles for girls in Malawi and Guatemala, but there are still many girls who would benefit from a bike, but could not receive one. This year, Girl Up has a goal of returning to Malawi and this time,
+                donating 1,000 bikes. But to make this happen, they need our help!</p>
+                <p>Support my <span class="pink">fundraising campaign here</span> or <span class="pink">request a sticker from me today.</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 flex center-block">
+                <div style="width: 80%;">
+                    <h2 class="nunito" style="width: auto;"><span class="pink">#PowertoHer</span> on Social Media</h2>
+                    <table id="bottom-gallery"> <!--I do not normally use tables cause they don't scale well on mobil (requested) --->
+                        <tr>
+                            <td><a caption="Caption 1" href="./Pictures/slider1.jpg"><img src="./Pictures/slider1.jpg"></a></td>
+                            <td><a caption="Caption 2" href="./Pictures/slider2.jpg"><img src="./Pictures/slider2.jpg"></a></td>
+                            <td><a caption="Caption 3" href="./Pictures/slider3.jpg"><img src="./Pictures/slider3.jpg"></a></td>
+                        </tr>
+                        <tr>
+                            <td><a caption="Caption 4" href="./Pictures/slider4.jpg"><img src="./Pictures/slider4.jpg"></a></td>
+                            <td><a caption="Caption 5" href="./Pictures/representation.jpg"><img src="./Pictures/representation.jpg"></a></td>
+                            <td><a caption="Caption 6" href="./Pictures/representation2.jpg"><img src="./Pictures/representation2.jpg"></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row-fluid social-media-section">
+                <a href="#"><span class="fa fa-1x fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-1x fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-1x fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-1x fa-envelope-o"></span></a>
+            </div>
+            <div class="row-fluid">
+                <p>her future project - a social activism art campaign dedicated to protecting the future of women and girls.</p>
+            </div>
+            <div class="row-fluid">
+                <p id="credits">Website Coded by Bryce P. (Web Developer, Not Owner of Site)</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Pop-up Gallery Plug-in -->
+    <script src="./JS/jquery.magnific-popup.min.js"></script>
+    <!--Custom product image gallery plugin by Bryce P.-->
+    <script src="./JS/nav-product-gallery.js"></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,122 @@
+.work-grid{
+    display: flex;
+    flex-wrap: wrap;
+    font-style: italic;
+    justify-content: center;
+}
+.work-grid h5{
+    font-size: 14pt;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.work-grid p{
+    font-size: 12pt;
+}
+.work-grid>div{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.work-grid>div>div{ /*Image divs*/
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-grid>div>div::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+
+}
+
+.work-grid>div>div>img{
+    object-fit: contain;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+#content{
+    padding-top: 70px;
+}
+.text-background{
+    background-image: none;
+}
+.text-background::before{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    content: '';
+    opacity: .2;
+    background-color: #ff7ed7;
+}
+.text-background{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-background>div{
+    text-align: center;
+
+}
+
+#supportForm{
+    width: 100%;
+    text-align: left;
+}
+.form-control:focus{
+    border-color: #ff7ed7;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255 ,126,215,.6);
+
+}
+.error{
+    color: red;
+}
+#page{
+    position: relative;
+    z-index: 0;
+}
+.pop-up-box{
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+.pop-up-box::before{ /*Pop-up box background*/
+    content: ' ';
+    display: block;
+    z-index: 0;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    background-color: black;
+    opacity: .2;
+}
+.pop-up-box>div{ /*Actual box of pop-up box*/
+    padding: 2%;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    background-color: white;
+    width: 30%;
+}
+.pop-up-box>div>.pop-up-button{
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+}

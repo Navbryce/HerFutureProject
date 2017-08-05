@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Website for Julie">
+    <meta name="author" content="Bryce P.">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>her future project</title>
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- CSS --->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/standardpage-style.css">
+    <link rel="stylesheet" href="./css/nonstandard-styles.css">
+
+  </head>
+  <script>
+
+    $(window).on('load', function() {
+        $("body").fadeIn(1500); 
+    });
+    
+
+  </script>
+
+  <body>
+
+    <nav class="navbar navbar-static-top navbar-default">
+      <div style="padding-left: 5%; padding-right: 5%; padding-top: 30px; padding-bottom: 30px;" class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span class="pink no-hover" class="pink">her</span> future project</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul id="navLinks" class="nav navbar-nav">
+            <li><a class="navLink" href="index.html">home</a></li>
+            <li><a class="navLink" href="thestory.html">the story</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle navLink disabled" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">the issues <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu">
+                <li class="bottom-border"><a href="representation.html">representation</a></li>
+                <li><a href="education.html">education</a></li>
+              </ul>
+            </li>
+            <li><a class="navLink" href="thework.html">the work</a></li>
+            <li><a class="navLink pink" href="supporther.html">support her future</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="page-mainImage" style="background-image: url('./Pictures/herstory.jpg');">
+        
+    </div>
+    <!---To add more work, just copy and paste one of the nested divs under the div below. Imaging scaling will be done automatically. Aspect ratio will be
+    maintained and the image won't be cropped. --->
+    
+    <!--To get equal size gaps, you need to have equal size images. If I do this programatically, the images will inherently be cropped/their aspect ratio will be messed up.
+    I recommend using some sort of image editor to give all the images the same width and height but keeping scale. To do that add a random background --->
+    <div id="content" class="container-fluid work-grid">
+        <div>
+            <div>
+                <img src="./Pictures/slider3.jpg">
+            </div>
+            <h5>Title</h5>
+            <p>Description text goes here</p>
+        </div>
+        <div>
+            <div>
+                <img src="./Pictures/Art/tempart.jpg">
+            </div>
+            <h5>Title</h5>
+            <p>Description text goes here</p>
+        </div>
+        <div>
+            <div>
+                <img src="./Pictures/slider2.jpg">
+            </div>
+            <h5>Title</h5>
+            <p>Description text goes here</p>
+        </div>
+        <div>
+            <div>
+                <img src="./Pictures/slider1.jpg">
+            </div>
+            <h5>Title</h5>
+            <p>Description text goes here</p>
+        </div>
+    
+    </div>
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="row-fluid social-media-section">
+                <a href="#"><span class="fa fa-1x fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-1x fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-1x fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-1x fa-envelope-o"></span></a>
+            </div>
+            <div class="row-fluid">
+                <p>her future project - a social activism art campaign dedicated to protecting the future of women and girls.</p>     
+            </div>
+            <div class="row-fluid">
+                <p id="credits">Website by Bryce P.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
