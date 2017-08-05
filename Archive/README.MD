@@ -1,1 +1,1 @@
-The website went through a redesign. The archive are the pages from the initial design.
+The website went through a redesign. The archive is the pages from the initial design.
